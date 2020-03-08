@@ -1,0 +1,164 @@
+/* Reset */
+
+body, h1, h2, p, ul, li, a {
+    margin: 0%;
+    padding: 0%;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Nunito', Helvetica, Arial, sans-serif;
+    color: #222;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Fim Reset */
+
+/* Info */
+
+.info-bg {
+    background-color: #122AB2;
+    color: #fff;
+}
+
+.info {
+    max-width: 960px;
+    padding-top: 10px;
+    display: flex; /* dizendo que irá utilizar a exibição em flex (flexbox)*/
+    justify-content: space-between; /* irá alinhar o conteúdo usando o mesmo espaçamento para separar o conteúdo um do outro */
+    /*align-content: space-between; /* alinha na vertical */
+    /*align-items: flex-start;*/ /* funciona em elementos de bloco */
+    
+    flex-wrap: wrap; /* quando conteúdo não couber mais, não irá diminuir até deixar o conteúdo bem pequeno, irá quebrar linha */
+    margin: 0 auto; /* centralizando */
+    
+}
+
+.info a, .info p {
+    margin: 0 10px 10px 10px;
+}
+
+.info a {
+    color: #fff;
+}
+
+/* Fim Info */
+
+/* Menu */
+
+.menu-bg {
+    background-color: #2C70FF;
+    
+}
+
+.menu {
+    max-width: 960px;
+    padding: 20px 0;
+
+    display: flex;
+    justify-content: space-between; /* irá alinhar o conteúdo usando o mesmo espaçamento para separar o conteúdo um do outro */
+    flex-wrap: wrap; /* quando conteúdo não couber mais, não irá diminuir até deixar o conteúdo bem pequeno, irá quebrar linha */
+
+    align-items: center; /* alinhando ao centro na vertical */
+    
+    margin: 0 auto;
+    
+}
+
+.menu a {
+    color: #fff;
+}
+
+.menu-logo a {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.menu-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-nav a {
+    font-size: 1.5em;
+    display: block; /* mudando o padrão para block de inline para pegar padding */
+    padding: 10px; /* aumentando área de contato do botão */
+}
+
+.menu-nav a:hover {
+    color: #122AB2;
+}
+
+/* Fim menu */
+
+/* Introdução */
+
+.introducao {
+
+    max-width: 960px;
+    margin: 60px auto;
+
+    padding: 0 10px;
+
+    font-size: 3em;
+    line-height: 2.4em;
+}
+
+/* Fim Introdução */
+
+.sobre {
+    border-top: solid 3px #2C70FF;
+    border-bottom: solid 3px #2C70FF;
+    
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 0;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobre-info {
+    flex: 2 1 300px; /* grow 2 shrink 1 basis 0; esse irá crescer mais que os outros */
+    margin: 0 10px;
+}
+
+.sobre-info h1 {
+    font-size: 3em;
+    margin-bottom: .5em;
+}
+
+.sobre-info p {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    margin-bottom: 1em;
+    
+    color: #7C7C7C;
+}
+
+.sobre-img {
+    flex: 1 1 160px;
+    margin: 0 10px;
+}
+
+/* Sobre */
+
+
+
+/* Fim Sobre */
