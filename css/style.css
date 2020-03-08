@@ -122,6 +122,8 @@ body {
 
 /* Fim Introdução */
 
+/* Sobre */
+
 .sobre {
     border-top: solid 3px #2C70FF;
     border-bottom: solid 3px #2C70FF;
@@ -157,8 +159,168 @@ body {
     margin: 0 10px;
 }
 
-/* Sobre */
-
-
-
 /* Fim Sobre */
+
+/* Produtos */
+
+.produtos {
+    margin: 60px auto;
+    max-width: 960px;
+}
+
+.produtos h1 {
+    font-size: 3em;
+    margin: 0 10px;
+    margin-bottom: 40px;
+}
+
+.produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.produtos-item {
+    flex: 1 1 175px;
+    margin: 10px;
+    align-self: flex-end; /* alinhando conteúdo ao final */
+}
+
+.produtos-item h2 {
+    font-size: 2.5em;
+    background-color: #F7F7F7;
+    color: #A4A4A4;
+    padding: 40px 20px;
+}
+
+.purple {
+    border-top: solid 8px #AE81FF;
+}
+
+.pink {
+    border-top: solid 8px #F9265E;
+}
+
+.blue {
+    border-top: solid 8px #66D9EB;
+}
+
+/* Fim Produtos */
+
+/* Preço */
+
+.preco {
+    background-color: #F7F7F7;
+    padding: 60px;
+
+    display: flex; /* definindo exibição em flex */
+    flex-wrap: wrap; /* quando precisar irá quebrar linha */
+
+    align-items: flex-end; /* alinhando ao final */
+}
+
+.preco-item {
+
+    flex: 1 1 260px; /* grow 1 shrink 1 basis 260px definindo mínimo width, pois no safari não faz a quebra automática */
+    border: solid 4px #fff;
+
+    padding: 20px;
+    margin: 10px;
+
+    min-width: 260px; 
+}
+
+.preco-item h2 {
+    font-size: 2.5em;
+    color: #A4A4A4;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.preco-item span {
+    font-size: 2.5em;
+    color: #222222;
+    border-top: solid 4px #fff;
+    border-bottom: solid 4px #fff;
+    
+    padding: 10px 0;
+    max-width: 300px;
+    margin: 20px auto;
+    display: block; /* alterando para block para pegar o max-width é aumentar a borda, se não a borda ficaria pequena */
+
+    text-align: center;
+
+    font-weight: bold;
+   
+}
+
+.preco-item sup {
+   font-size: 1.5rem; /* se colocar em em aqui irá ser relativo ao pai o span no caso 2.5em, nesse caso o conteúdo irá crescer muito e ficar gigante, por isso é usado rem que é relativo a raiz no caso os 16px por padrão do browser */
+}
+
+.preco-item ul {
+    max-width: 300px;
+    margin: 20px auto;
+
+    font-size: 1.5em;
+    font-style: italic;
+   
+
+    color: #7C7C7C;
+}
+
+.preco-item li {
+    display: flex; /* criando display flex para alinhar o conteúdo */
+
+    justify-content: space-between; /* colocando um entre os itens para que fique cada um em um canto */
+    align-items: center; /* sempre alinhando os itens ao centro */
+
+    margin-bottom: 15px;
+}
+
+.preco-item li::after {
+    content: '';
+    display: block;
+
+    background-color: #2C70FF;
+
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+}
+
+.preco-item a {
+    border: solid 4px; /* a cor pega a color quando não se define */
+    max-width: 300px;
+    display: block;
+    margin: 20px auto;
+
+    padding: 20px 0;
+
+    text-align: center;
+
+    color: #222;
+
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    .preco {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .preco .preco-item:nth-child(3) { /* definindo a ordem do último para que apareça em primeiro, por ser o mais caro */
+        order: -2;
+    }
+
+    .preco .preco-item:nth-child(2) { /* segundo mais caro */
+        order: -1;
+    }
+}
+
+/* Fim Preço */
