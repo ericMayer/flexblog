@@ -116,9 +116,16 @@ body {
 
     padding: 0 10px;
 
-    font-size: 3em;
+    font-size: 2.5em;
     line-height: 2.4em;
 }
+
+@media only screen and (max-width: 800px) {
+    .introducao {
+        font-size: 1.8em;
+    }
+}
+
 
 /* Fim Introdução */
 
@@ -142,7 +149,7 @@ body {
 }
 
 .sobre-info h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     margin-bottom: .5em;
 }
 
@@ -169,7 +176,7 @@ body {
 }
 
 .produtos h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     margin: 0 10px;
     margin-bottom: 40px;
 }
@@ -203,6 +210,8 @@ body {
 .blue {
     border-top: solid 8px #66D9EB;
 }
+
+
 
 /* Fim Produtos */
 
