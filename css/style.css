@@ -376,8 +376,105 @@ body {
 
 /* Newsletter */
 
+.newsletter {
+    
+    background-color: #F7F7F7;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px calc((100% - 960px) / 2); /* fazendo o cálculo para que tenha o container e mesmo assim continue pintado o fundo completo, dividindo por 2, pois irá ter o info e o form na newsletter */
+}
+
+.newsletter-info {
+    flex: 1 1 200px;
+    margin: 0 10px;
+}
+
+.newsletter-info h1 {
+    font-size: 2.5em;
+    color: #A4A4A4;
+}
+
+.newsletter-info p {
+    font-size: 1.5em;
+    font-style: italic;
+    color: #7C7C7C;
+    max-width: 240px;
+
+    margin-bottom: 10px;
+}
+
+.newsletter-form {
+    flex: 2 1 260px; /* irá crescer duas vezes mais que o newsletter-info */
+    margin: 0 10px;
+    align-self: center; /* alinhando ao centro */
+
+    display: flex; /* definindo como flex para os itens do formulário virarem flex items e ficarem grudados */
+    flex-wrap: wrap;
+}
+
+.newsletter-form input {
+
+    flex: 3 1 200px; /* irá crescer 3 vezes que o button */
+
+    outline: none;
+    
+    font-size: 1.5em;
+    color: #7C7C7C;
+    font-style: italic;
+
+    font-family: 'Nunito', Helvetica, Arial, sans-serif; /* por padrão input não pega a tipografia do site e fica com a que veem por padrão, por isso é necessário definir a tipografia de novo */
+
+    border: solid 4px #2C70FF;
+
+    padding: 15px;
+
+    
+
+    margin: 0px; /* em alguns browser, por exemplo safaria ele adiciona uma margem no input, principalmente em celular */
+    border-radius: 0px; /* em alguns browser, por exemplo safaria ele adiciona uma radius no input, principalmente em celular */
+}
+
+.newsletter-form button {
+    flex: 1 1 200px;
+
+    font-family: 'Nunito', Helvetica, Arial, sans-serif; /* por padrão button não pega a tipografia do site e fica com a que veem por padrão, por isso é necessário definir a tipografia de novo */
+
+    background-color: #2C70FF; /* colocando a cor de fundo */
+
+    border: 0px; /* tirando a borda que veem por padrão */
+
+    outline: none; /* tirando o azul que fica quando clica no ponto */
+    color: #fff; /* cor do texto */
+
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    margin: 0px; /* tirando a margin */
+    cursor: pointer; /* adicionando o cursor como pointer que informa que é clicável o botão */
+
+    padding: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .newsletter-form button {
+        font-size: 1.5em;
+    }
+}
+
 /* Fim Newsletter */
 
 /* Footer */
+
+.rodape {
+    background-color: #2C70FF;
+    padding: 40px 0;
+}
+
+.rodape p {
+    text-align: center;
+    color: #122AB2;
+    font-size: 1.5em;
+}
 
 /* Fim Footer */
